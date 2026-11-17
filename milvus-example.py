@@ -43,7 +43,7 @@ else:
     client.load_collection("holy_bible")
 
 
-text_queries = ["King of Israel", "Man who betrayed Jesus"]
+text_queries = ["Egypt pharaoh", "Man betray Jesus", "Cain and Abel"]
 vector_queries = model.encode(text_queries, convert_to_numpy=True).astype("float32")
 
 res = client.search(
